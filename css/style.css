@@ -408,17 +408,19 @@ img {
       background-color: #ff5a3c; }
 
 .button-wrapper {
+  display: none;
   background-color: #ffffff;
   border: none;
   cursor: pointer; }
   .button-wrapper > img {
     height: 30px;
     width: 30px;
-    display: none;
     margin-left: auto; }
 
 .wrapper {
   display: none;
+  position: absolute;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -428,7 +430,7 @@ img {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 1rem; }
+  background-color: #ffffff; }
   .wrapper--active {
     display: -webkit-box;
     display: -webkit-flex;
@@ -466,7 +468,7 @@ img {
 @media screen and (max-width: 1200px) {
   .nav {
     display: none; }
-  .button-wrapper > img {
+  .button-wrapper {
     display: block; }
   .menu__button {
     display: none; }

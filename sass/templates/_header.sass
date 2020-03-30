@@ -44,20 +44,22 @@
         height: 2px
         background-color: #ff5a3c
 .button-wrapper
+  display: none
   background-color: #ffffff
   border: none
   cursor: pointer
   &>img
     height: 30px
     width: 30px
-    display: none
     margin-left: auto
     
 .wrapper
   display: none
+  position: absolute
+  width: 100%
   flex-direction: column
   align-items: center
-  margin-top: 1rem
+  background-color: $light
   &--active
     display: flex
   &__item
