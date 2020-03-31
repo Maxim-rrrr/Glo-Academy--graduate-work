@@ -54,14 +54,17 @@
     margin-left: auto
     
 .wrapper
-  display: none
   position: absolute
+  top: -1000px
   z-index: 10
+  display: flex
   width: 100%
+  height: 500px
   flex-direction: column
   align-items: center
   &--active
-    display: flex
+    top: 6rem
+    transition: all 0.5s
   &__item
     width: 100%
     text-align: center
@@ -71,14 +74,12 @@
     font-size: 2rem
     line-height: 2.64rem
     font-weight: 300
-    border-bottom: 1px solid #000
     color: #38393b
     background-color: #ffffff
   &__item-call
     width: 100%
     text-align: center
     border: none
-    border-bottom: 1px solid #ff5a3c
     margin-left: 1.7rem
     padding-top: 0.5rem
     text-decoration: none
