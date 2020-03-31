@@ -111,8 +111,10 @@ $(document).ready(function () {
         'onReady': videoPlay,
       }
     });
-    
-  })
+    $('.figures__card').addClass('figures__card--video-active');
+  });
+
+  
 
   function videoPlay(event) {
     event.target.playVideo();
