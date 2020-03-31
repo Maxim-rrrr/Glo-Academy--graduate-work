@@ -423,6 +423,8 @@ img {
     line-height: 2.64rem;
     font-weight: 500;
     color: #38393b; }
+    .menu__phone:hover {
+      color: #ff5a3c; }
   .menu__button {
     padding: 0.1rem 2.05rem; }
 
