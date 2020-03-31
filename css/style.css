@@ -340,6 +340,10 @@ input.invalid {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
@@ -349,7 +353,10 @@ input.invalid {
   flex-wrap: wrap; }
 
 .col-30 {
-  width: 33%; }
+  -webkit-flex-basis: 33%;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  min-width: 300px; }
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -400,7 +407,7 @@ img {
   width: 100%;
   z-index: 90; }
   .menu__container {
-    width: 100%;
+    width: 90%;
     max-width: 1170px;
     margin: 0 auto;
     display: -webkit-box;
@@ -691,7 +698,7 @@ img {
 
 .benefits__card {
   margin-bottom: 2.2857rem;
-  height: 180px;
+  height: 200px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -700,25 +707,26 @@ img {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  flex-direction: column; }
   .benefits__card-img {
     display: block;
     margin: 0 auto;
-    margin-bottom: 0.8rem; }
+    margin-bottom: 0.8rem;
+    height: 40px; }
+    .benefits__card-img > img {
+      display: block;
+      margin: auto; }
   .benefits__card-title {
     display: block;
     text-align: center;
     font-size: 1.43rem;
     line-height: 2.64rem;
     font-weight: 700;
-    color: #2c2c2d; }
+    color: #2c2c2d;
+    margin-bottom: 0.5rem; }
   .benefits__card-text {
     margin: 0 auto;
-    max-width: 21.43rem;
+    max-width: 22.6rem;
     text-align: center;
     font-size: 1.143rem;
     line-height: 1.57rem;
@@ -885,7 +893,7 @@ img {
       font-size: 3.4rem;
       line-height: 4.43rem; }
     .hero-content {
-      padding-left: 0; }
+      margin: 0 auto; }
   .figures__video {
     min-height: 25.2rem;
     margin-top: 0; } }
