@@ -539,6 +539,11 @@ img {
   .hero__social-networks {
     position: absolute;
     left: 2.7%; }
+    .hero__social-networks > a {
+      display: block;
+      border-radius: 50%; }
+      .hero__social-networks > a:hover {
+        box-shadow: 0 0 10px rgba(255, 90, 60, 0.7); }
     .hero__social-networks-line {
       display: block;
       width: 4px;
@@ -646,6 +651,10 @@ img {
     position: relative;
     cursor: pointer;
     margin-top: 8rem; }
+    .figures__video-play:hover::before {
+      opacity: 0.8; }
+    .figures__video-play:hover::after {
+      opacity: 0.8; }
     .figures__video-play > img {
       position: relative;
       z-index: 1; }
@@ -658,7 +667,9 @@ img {
       height: 8.7143rem;
       opacity: 0.4;
       background-color: #090909;
-      border-radius: 50%; }
+      border-radius: 50%;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
     .figures__video-play::after {
       content: '';
       position: absolute;
@@ -668,7 +679,9 @@ img {
       height: 6.643rem;
       opacity: 0.67;
       background-color: #b9b8b8;
-      border-radius: 50%; }
+      border-radius: 50%;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
 
 .benefits__section-title {
   margin-top: 6.3rem;
