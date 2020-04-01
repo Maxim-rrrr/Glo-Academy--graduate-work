@@ -1,9 +1,11 @@
 @media screen and ( max-width: 1300px )
   html
     font-size: 12px
-@media screen and ( max-height: 1000px ) 
-  .hero
-    background: url(../img/hero/bg_left_top_hero.png) no-repeat -1% 0%
+  .cost
+    &__form
+      background: $light 
+    &__input-group-box
+      margin: 0 auto
 @media screen and ( max-width: 1200px )
   .nav
     display: none
@@ -12,7 +14,6 @@
   .menu
     &__button
       display: none
-
   .menu
     justify-content: start
   .logo
@@ -28,6 +29,7 @@
     &__social-networks
       &-line
         height: 30rem
+  
 @media screen and ( max-width: 1037px )
   .services
     &__row
