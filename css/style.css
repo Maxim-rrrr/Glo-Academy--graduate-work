@@ -910,7 +910,7 @@ img {
   position: absolute;
   z-index: 10;
   cursor: pointer;
-  top: 57%;
+  top: 50%;
   background-size: 42px;
   width: 23px;
   height: 47px; }
@@ -924,6 +924,11 @@ img {
 .cases__swiper-button-next {
   right: 2.5%;
   background: url(../img/cases/arrow_next_swiper_cases.png) no-repeat center; }
+
+.cases__button {
+  display: block;
+  padding: 0.35rem 4.5rem;
+  margin: 2.5rem auto 5.7rem; }
 
 .color-green {
   font-size: 1.2857rem;
