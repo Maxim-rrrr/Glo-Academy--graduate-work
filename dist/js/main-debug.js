@@ -7,6 +7,15 @@ $(document).ready(function () {
     wrapper.toggleClass('wrapper--active');
   });
 
+  window.addEventListener('scroll', function() {
+    $('.menu').innerHTML = pageYOffset;
+    if (pageYOffset > 0){
+      $('.menu').addClass('menu--scroll')
+    }else{
+      $('.menu').removeClass('menu--scroll')
+    }
+  });
+
   // Получение элементов
   var modal = $('.modal'),                    //Модальное окно
       modalBtn = $('[data-toggle=modal]');    // все элементы вызывающие модальное окно
@@ -90,6 +99,60 @@ $(document).ready(function () {
     }
   });
 
+  // Узнать стоимость
+  $('.cost__form').validate({
+    rules: {
+      costName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      costEmail: {
+        required: true,
+        email: true,
+      },
+      costAddress: {
+        required: true,
+      },
+      costMessage: {
+        required: true,
+      }
+    },
+    errorClass: "invalid",
+    
+    messages: {
+      costName: {
+        required: "Имя обязательно",
+        minlength: "Длина имени 2-15 символов",
+        maxlength: "Длина имени 2-15 символов"
+      },
+      costEmail:{
+        required: "Телефон обязательно",
+        email: "Введите в формате: name@domain.com"
+      },
+      costAddress:{
+        required: "Напишите адрес сайта",
+        
+      },
+      costMessage:{
+        required: "Нашишите сообшение",
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал, ответ с сервера', response);
+          $(form)[0].reset();
+          modalThanks.toggleClass('modal--visible');
+          //ym(61250854,'reachGoal','form');
+        }
+      });
+    }
+  });
+
   //Видео в секции figures
   var player;
 
@@ -102,11 +165,38 @@ $(document).ready(function () {
         'onReady': videoPlay,
       }
     });
-    
-  })
+    $('.figures__card').addClass('figures__card--video-active');
+  });
+
+  
 
   function videoPlay(event) {
     event.target.playVideo();
   }
 
+// Слайдеры
+  // cases
+  var casesSwiper = new Swiper ('.cases__swiper-container', {
+    loop: true,
+    // Стрелки навигации
+    navigation: {
+      prevEl: '.cases__swiper-button-prev',
+      nextEl: '.cases__swiper-button-next',
+    },
+  });
+  // reviews
+  var casesSwiper = new Swiper ('.reviews__swiper-container', {
+    loop: true,
+    // Стрелки навигации
+    navigation: {
+      prevEl: '.reviews__swiper-button-prev',
+      nextEl: '.reviews__swiper-button-next',
+    },
+  });
+
+
+
+
+
 })
+

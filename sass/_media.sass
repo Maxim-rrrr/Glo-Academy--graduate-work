@@ -67,9 +67,7 @@
       min-height: 25.2rem
       margin-top: 0
   .reviews__swiper-button
-    &-prev
-      display: none
-    &-next
+    &-prev, &-next
       display: none
 @media screen and ( max-width: 576px )
   .menu
@@ -90,4 +88,13 @@
     &__social-networks
       display: none
   .cases
-    display: none
+    &__container
+      padding-left: 0
+      padding-right: 0
+    &__swiper
+      &-slide-content
+        padding-left: 1px
+        padding-right: 1px
+      &-button
+        &-prev, &-next
+          display: none

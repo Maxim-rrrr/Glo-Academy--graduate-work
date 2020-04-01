@@ -166,6 +166,7 @@ $(document).ready(function () {
       }
     });
     $('.figures__card').addClass('figures__card--video-active');
+    $('.hero').addClass('hero--video-active');
   });
 
   
