@@ -175,7 +175,8 @@ $(document).ready(function () {
   }
 
 // Слайдеры
-  var mySwiper = new Swiper ('.cases__swiper-container', {
+  // cases
+  var casesSwiper = new Swiper ('.cases__swiper-container', {
     loop: true,
     // Стрелки навигации
     navigation: {
@@ -183,7 +184,15 @@ $(document).ready(function () {
       nextEl: '.cases__swiper-button-next',
     },
   });
-
+  // reviews
+  var casesSwiper = new Swiper ('.reviews__swiper-container', {
+    loop: true,
+    // Стрелки навигации
+    navigation: {
+      prevEl: '.reviews__swiper-button-prev',
+      nextEl: '.reviews__swiper-button-next',
+    },
+  });
 
 
 
