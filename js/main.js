@@ -194,6 +194,15 @@ $(document).ready(function () {
       nextEl: '.reviews__swiper-button-next',
     },
   });
+  // news
+  var casesSwiper = new Swiper ('.news__swiper-container', {
+    loop: true,
+    // Стрелки навигации
+    navigation: {
+      prevEl: '.news__swiper-button-prev',
+      nextEl: '.news__swiper-button-next',
+    },
+  });
 
 
 

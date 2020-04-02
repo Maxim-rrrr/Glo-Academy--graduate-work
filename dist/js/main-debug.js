@@ -166,6 +166,7 @@ $(document).ready(function () {
       }
     });
     $('.figures__card').addClass('figures__card--video-active');
+    $('.hero').addClass('hero--video-active');
   });
 
   
@@ -191,6 +192,15 @@ $(document).ready(function () {
     navigation: {
       prevEl: '.reviews__swiper-button-prev',
       nextEl: '.reviews__swiper-button-next',
+    },
+  });
+  // news
+  var casesSwiper = new Swiper ('.news__swiper-container', {
+    loop: true,
+    // Стрелки навигации
+    navigation: {
+      prevEl: '.news__swiper-button-prev',
+      nextEl: '.news__swiper-button-next',
     },
   });
 
