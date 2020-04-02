@@ -8,6 +8,11 @@ $costEmail = $_POST['costEmail'];
 $costAddress = $_POST['costAddress'];
 $costMessage = $_POST['costMessage'];
 
+$contactsName = $_POST['contactsName'];
+$contactsEmail = $_POST['contactsEmail'];
+$contactsPhone = $_POST['contactsPhone'];
+$contactsMessage = $_POST['contactsMessage'];
+
 
 // Load Composer's autoloader
 require 'phpmailer/PHPMailer.php';
@@ -50,6 +55,14 @@ try {
                       <b>E-mail:</b>           ${costEmail}<br>
                       <b>Адрес веб-сайта:</b>  ${costAddress}<br>
                       <b>Сообщение:</b>        ${costMessage}";
+                      
+  } elseif(!empty($contactsName)) {
+
+    $mail->Subject = "Вопрос";
+    $mail->Body    = "<b>Имя пользователя:</b> ${contactsName}<br>
+                      <b>E-mail:</b>           ${contactsEmail}<br>
+                      <b>Номер телефона:</b>  ${contactsPhone}<br>
+                      <b>Сообщение:</b>        ${contactsMessage}";
                       
   }
 
