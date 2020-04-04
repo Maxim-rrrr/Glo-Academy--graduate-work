@@ -9,7 +9,7 @@ $(document).ready(function () {
   var buttonWrapper = $('.button-wrapper'),
       wrapper = $('.wrapper');
       
-  buttonWrapper.on('click', () => {
+  buttonWrapper.on('click', function() {
     wrapper.toggleClass('wrapper--active');
   });
 
@@ -27,12 +27,12 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle=modal]');    // все элементы вызывающие модальное окно
 
   // Вункция вызова модального окна
-  modalBtn.on('click', () => {
+  modalBtn.on('click', function() {
     modal.toggleClass('modal--visible');
   });
       
   // Вункция закрытия модального окна нажатием на крестик или на поле вокруг модального окна
-  modal.on('click', () => {
+  modal.on('click', function() {
     if (event.target.className === "modal modal--visible") {
 
       modal.removeClass('modal--visible');
@@ -51,7 +51,7 @@ $(document).ready(function () {
   var modalThanks = $('.modal-thanks');                    // Модальное окно
         
   // Вункция закрытия модального окна нажатием на крестик или на поле вокруг модального окна
-  modalThanks.on('click', () => {
+  modalThanks.on('click', function() {
     if (event.target.className === "modal-thanks modal--visible") {
 
       modalThanks.removeClass('modal--visible');

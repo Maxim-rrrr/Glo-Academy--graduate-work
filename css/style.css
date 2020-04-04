@@ -422,6 +422,8 @@ img {
   color: #2c2c2d; }
   .section-title__text-link {
     color: #ff5a3c; }
+    .section-title__text-link:hover {
+      text-decoration: none; }
 
 .form__label {
   display: block;
@@ -654,6 +656,9 @@ img {
     position: relative;
     z-index: 10;
     padding: 5px 38px; }
+
+.figures__title {
+  display: none; }
 
 .figures__card {
   position: relative;
@@ -1164,6 +1169,8 @@ img {
   position: relative;
   min-height: 567px;
   background: #ffffff url(../img/contacts/bg_contacts.jpg) no-repeat center; }
+  .contacts__title {
+    display: none; }
   .contacts__container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1177,6 +1184,8 @@ img {
     color: #1e1e1e; }
     .contacts__text > a {
       color: #ff5a3c; }
+      .contacts__text > a:hover {
+        text-decoration: none; }
   .contacts__address {
     margin-right: 2.5rem;
     font-size: 1.2857rem;
@@ -1449,6 +1458,8 @@ img {
       margin: 2rem  auto 2rem; } }
 
 @media screen and (max-width: 1200px) {
+  .logo {
+    margin-left: 10%; }
   .nav {
     display: none; }
   .button-wrapper {
@@ -1522,7 +1533,9 @@ img {
     background-color: #ff5a3c; }
   .button--light:hover {
     color: #ff5a3c;
-    background-color: #ffffff; } }
+    background-color: #ffffff; }
+  .section-title__text-link:hover, .contacts__text > a:hover {
+    text-decoration: underline; } }
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -1600,3 +1613,32 @@ img {
       font-size: 15px; }
     .date__month {
       font-size: 8px; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .menu__container {
+    margin: 0; }
+  .figures__item {
+    margin-top: 5rem; }
+  .figures__video-play {
+    margin-top: 22.3rem; }
+  .modal__input {
+    padding: 0; }
+    .modal__input:-ms-input-placeholder {
+      height: 4rem;
+      font-size: 1.14286rem;
+      line-height: 2.642856rem;
+      font-weight: 300;
+      color: #878585; }
+  .cost__input {
+    padding: 0; }
+    .cost__input:-ms-input-placeholder {
+      height: 2rem;
+      color: #1e1e1e; }
+  .contacts__input {
+    padding: 0; }
+    .contacts__input:-ms-input-placeholder {
+      height: 2rem;
+      font-size: 1.286rem;
+      line-height: 2.5rem;
+      font-weight: 300;
+      color: #413f3e; } }

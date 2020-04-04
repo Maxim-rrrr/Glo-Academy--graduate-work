@@ -2,6 +2,8 @@
   position: relative
   min-height: 567px
   background: $light url(../img/contacts/bg_contacts.jpg) no-repeat center
+  &__title
+    display: none
   &__container
     display: flex
   &__text
@@ -12,6 +14,8 @@
     color: #1e1e1e
     &>a
       color: $primary
+      &:hover
+        text-decoration: none
   &__address
     margin-right: 2.5rem
     font-size: 1.2857rem

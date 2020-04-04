@@ -25,6 +25,8 @@
       padding: 0 1rem 
       margin: 2rem  auto 2rem 
 @media screen and ( max-width: 1200px )
+  .logo
+    margin-left: 10%
   .nav
     display: none
   .button-wrapper
@@ -102,6 +104,9 @@
       &:hover 
         color: #ff5a3c
         background-color: $light
+  .section-title__text-link, .contacts__text>a
+    &:hover
+      text-decoration: underline
 @media screen and ( max-width: 768px )
   .hero
     margin-bottom: -15rem
@@ -176,4 +181,34 @@
       font-size: 15px
     &__month
       font-size: 8px
-  
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .menu
+    &__container
+      margin: 0
+  .figures
+    &__item
+      margin-top: 5rem
+    &__video-play
+      margin-top: 22.3rem
+  .modal
+    &__input
+      padding: 0
+      &:-ms-input-placeholder 
+        height: 4rem
+        font-size: 1.14286rem
+        line-height: 2.642856rem
+        font-weight: 300
+        color: #878585
+  .cost__input
+    padding: 0
+    &:-ms-input-placeholder 
+      height: 2rem
+      color: #1e1e1e
+  .contacts__input
+    padding: 0
+    &:-ms-input-placeholder 
+      height: 2rem
+      font-size: 1.286rem
+      line-height: 2.5rem
+      font-weight: 300
+      color: #413f3e
