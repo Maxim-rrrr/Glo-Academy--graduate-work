@@ -131,7 +131,7 @@ $(document).ready(function () {
         maxlength: "Длина имени 2-15 символов"
       },
       costEmail:{
-        required: "Телефон обязательно",
+        required: "E-mail обязательно",
         email: "Введите в формате: name@domain.com"
       },
       costAddress:{
@@ -186,7 +186,7 @@ $(document).ready(function () {
         maxlength: "Длина имени 2-15 символов"
       },
       contactsEmail:{
-        required: "Телефон обязательно",
+        required: "E-mail обязательно",
         email: "Введите в формате: name@domain.com"
       },
       contactsPhone:{

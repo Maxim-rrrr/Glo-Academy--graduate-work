@@ -6,6 +6,8 @@ const cleanCSS = require('gulp-clean-css');
 const minify = require('gulp-minify');
 const htmlmin = require('gulp-htmlmin');
 const tinypng = require('gulp-tinypng-compress');
+const gulpDeployFtp = require ('gulp-deploy-ftp');
+const del = require ('del');
 
 // Static server
 function bs() {
@@ -56,7 +58,6 @@ function buildJS(done) {
 
     src(['js/**.min.js'])
         .pipe(dest('dist/js/'));
-
     done();
 };
 
