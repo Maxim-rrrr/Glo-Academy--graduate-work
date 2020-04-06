@@ -452,6 +452,21 @@ img {
   position: absolute;
   top: -150px; }
 
+.back-to-top {
+  position: fixed;
+  z-index: 99;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  width: 3.57rem;
+  height: 3.57rem;
+  background: rgba(0, 0, 0, 0.5) url(../img/up-arrow.svg);
+  border-radius: 5px; }
+  .back-to-top:hover {
+    background: rgba(0, 0, 0, 0.6) url(../img/up-arrow.svg); }
+  .back-to-top--scroll {
+    display: block; }
+
 .menu {
   height: 6rem;
   display: -webkit-box;
@@ -1522,6 +1537,8 @@ img {
     justify-content: center; } }
 
 @media screen and (max-width: 992px) {
+  .back-to-top:hover {
+    background: rgba(0, 0, 0, 0.5) url(../img/up-arrow.svg); }
   .nav {
     display: none; }
   .button-wrapper {

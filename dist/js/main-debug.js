@@ -13,12 +13,23 @@ $(document).ready(function () {
     wrapper.toggleClass('wrapper--active');
   });
 
+  // Фон меню
   window.addEventListener('scroll', function() {
     $('.menu').innerHTML = pageYOffset;
     if (pageYOffset > 0){
       $('.menu').addClass('menu--scroll')
     }else{
       $('.menu').removeClass('menu--scroll')
+    }
+  });
+  
+  // Кнопка наверх
+  window.addEventListener('scroll', function() {
+    $('.back-to-top').innerHTML = pageYOffset;
+    if (pageYOffset > 500){
+      $('.back-to-top').addClass('back-to-top--scroll')
+    }else{
+      $('.back-to-top').removeClass('back-to-top--scroll')
     }
   });
 
