@@ -50,6 +50,8 @@
         background: #ffffff
       &-slide-content
         justify-content: center
+  .statistics
+    padding: 0 0.5rem
   .contacts
     &__form
       margin-left: 0
@@ -149,11 +151,23 @@
     max-width: 400px
     min-height: 240px
     bottom: 0
-  .contacts__address
-    margin-right: 0rem
-    &-box
-      flex-direction: column
+  .news
+    padding-bottom: 1rem
+  .contacts
+    &__text
+      margin-top: 1rem
+      line-height: 2rem 
+      font-size: 1.8rem
+      width: 100%
       text-align: center
+    &__address
+      margin-right: 0rem
+      &-box
+        flex-direction: column
+        text-align: center
+        margin-top: 1rem
+    &__form
+      margin-top: 2rem
 @media screen and ( max-width: 576px )
   .menu
     justify-content: space-between
@@ -172,6 +186,10 @@
       line-height: 3.43rem 
     &__social-networks
       display: none
+  .cost
+    &__button
+      padding-left: 0.5rem
+      padding-right: 0.5rem
   .cases
     &__container
       padding-left: 0
