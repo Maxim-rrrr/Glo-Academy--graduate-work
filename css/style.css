@@ -1119,17 +1119,19 @@ img {
     .news__swiper-button-prev, .news__swiper-button-next {
       cursor: pointer;
       background-size: 42px;
-      width: 48px;
-      height: 28px; }
+      width: 56px;
+      height: 32px; }
       .news__swiper-button-prev::after, .news__swiper-button-next::after {
         display: none; }
     .news__swiper-button-prev {
       margin-right: 1.8rem;
       background: url(../img/news/arrow_prev_swiper_news.png) no-repeat center; }
+      .news__swiper-button-prev:hover {
+        background: url(../img/news/arrow_prev_swiper_news_active.png) no-repeat center; }
     .news__swiper-button-next {
-      width: 56px;
-      height: 32px;
       background: url(../img/news/arrow_next_swiper_news.png) no-repeat center; }
+      .news__swiper-button-next:hover {
+        background: url(../img/news/arrow_next_swiper_news_active.png) no-repeat center; }
 
 .date {
   position: absolute;
@@ -1477,7 +1479,9 @@ img {
       display: block;
       max-width: 50%;
       padding: 0 1rem;
-      margin: 2rem auto; } }
+      margin: 2rem auto; }
+    .contacts__form {
+      margin-left: 0; } }
 
 @media screen and (max-width: 1200px) {
   .hero {
@@ -1556,6 +1560,10 @@ img {
     left: 5%; }
   .reviews__swiper-button-next {
     right: 5%; }
+  .news__swiper-button-prev:hover {
+    background: url(../img/news/arrow_prev_swiper_news.png) no-repeat center; }
+  .news__swiper-button-next:hover {
+    background: url(../img/news/arrow_next_swiper_news.png) no-repeat center; }
   .button:hover {
     color: #ffffff;
     background-color: #ff5a3c; }
@@ -1589,7 +1597,16 @@ img {
   .factors {
     max-width: 400px;
     min-height: 240px;
-    bottom: 0; } }
+    bottom: 0; }
+  .contacts__address {
+    margin-right: 0rem; }
+    .contacts__address-box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; } }
 
 @media screen and (max-width: 576px) {
   .menu {

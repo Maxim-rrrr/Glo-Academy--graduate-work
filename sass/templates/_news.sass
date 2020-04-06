@@ -21,17 +21,19 @@
       &-prev, &-next
         cursor: pointer
         background-size: 42px
-        width: 48px
-        height: 28px
+        width: 56px
+        height: 32px
         &::after
           display: none
       &-prev
         margin-right: 1.8rem
         background: url(../img/news/arrow_prev_swiper_news.png) no-repeat center
+        &:hover
+          background: url(../img/news/arrow_prev_swiper_news_active.png) no-repeat center
       &-next
-        width: 56px
-        height: 32px
         background: url(../img/news/arrow_next_swiper_news.png) no-repeat center
+        &:hover
+          background: url(../img/news/arrow_next_swiper_news_active.png) no-repeat center
 .date
   position: absolute
   left: 21px
